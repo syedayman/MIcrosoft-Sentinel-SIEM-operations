@@ -1,5 +1,5 @@
 # Microsoft Sentinel SIEM Operations
-This write-up follows my completion of the Microsoft Applied Skills credential - [Configuring SIEM Security Operations using Microsoft Sentinel](https://learn.microsoft.com/en-gb/credentials/applied-skills/configure-siem-security-operations-using-microsoft-sentinel/) to demonstrate the ability to set up and configure Microsoft Sentinel for various SIEM (Security Information & Event Management) and SOAR (Security Orchestration, Automation & Response) operations in Azure.
+This write-up follows [my completion](https://learn.microsoft.com/api/credentials/share/en-gb/SyedAyman-3501/4B2D8CF2864E06CA?sharingId=C6DD9DEB85779758) of the Microsoft Applied Skills credential - [Configuring SIEM Security Operations using Microsoft Sentinel](https://learn.microsoft.com/en-gb/credentials/applied-skills/configure-siem-security-operations-using-microsoft-sentinel/) to demonstrate the ability to set up and configure Microsoft Sentinel for various SIEM (Security Information & Event Management) and SOAR (Security Orchestration, Automation & Response) operations in Azure.
 
 ![image](https://github.com/user-attachments/assets/52c2d9ec-bbf0-4b17-a897-939fd245ac18)
 
