@@ -18,10 +18,12 @@ Custom deployed resource group and its corresponding resources for the exercise
 
 Onbaord the workspace to Microsoft Sentinel by running the following commands in the Azure Cloud Shell
 ```bash
+# get azure AD authorization token
 az account get-access-token --resource https://management.azure.com/
 ```
 
 ```bash
+# cURL command to onboard the workspace
 curl -X PUT \
 "https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}/providers/Microsoft.SecurityInsights/onboardingStates/default?api-version=2024-03-01" \
 -H "Authorization: Bearer <your_token>" \
