@@ -15,7 +15,19 @@ This write-up follows [my completion](https://learn.microsoft.com/api/credential
 Custom deployed resource group and its corresponding resources for the exercise 
 
 ![Screenshot 2024-09-24 180520](https://github.com/user-attachments/assets/e13f5d65-c485-4a68-88b9-2cc432468058)
----
+
+Onbaord the workspace to Microsoft Sentinel by running the following commands in the Azure Cloud Shell
+```bash
+az account get-access-token --resource https://management.azure.com/
+```
+
+```bash
+curl -X PUT \
+"https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}/providers/Microsoft.SecurityInsights/onboardingStates/default?api-version=2024-03-01" \
+-H "Authorization: Bearer <your_token>" \
+-H "Content-Type: application/json" \
+-d '{}'
+```
 
 ### Connecting Microsoft services and Windows hosts to Sentinel
 Deploying data connector to detect Azure Activity by launching Azure Policy Assignment Wizard
